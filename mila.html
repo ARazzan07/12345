@@ -12,9 +12,13 @@
             text-align: center;
         }
     </style>
+    <script>
+        function showAlert() {
+            alert("Data berhasil disimpan");
+        }
+    </script>
 </head>
 <body>
-    
     <marquee><h1><B>Biodata</B></h1></marquee>
     <h2>SMK Telkom Banjarbaru</h2>
     <table border="1">
@@ -23,8 +27,7 @@
                 <td>Nama</td>
                 <td>Kelas</td>
                 <td>Sekolah</td>
-                <td>Nama</td>
-                <td>No Telepon</td>
+
             </td>
         </thead>
         <tbody>
@@ -32,11 +35,15 @@
                 <td>Mila Oktavia Pratiwi</td>
                 <td>XII E</td>
                 <td>SMK Telkom Banjarbaru</td>
-                <td><input type="text"></td>
-                <td><input type="number"></td>
             </td>
         </tbody>
     </table>
-    
+    <br>
+    Nama :
+    <input type="text">
+    <br>
+    Nomor Telepon :
+    <input type="number">
+    <button type="submit" onclick="showAlert()">Submit</button>
 </body>
 </html>
