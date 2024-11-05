@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Razzan</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <MARquee>TATIPU</MARquee>
+
+    <h1><B>RAZZAN</B></h1>
+
     <div style="text-align: center; font-size: 20px; font-family: Verdana;">
     <h1><B>BIODATA SAYA</B></h1>
+
         <p>
             Nama    : Razzan
-<<<<<<< HEAD
+
             <br>
-=======
+
             <p></p>
->>>>>>> 18691ad6334cd8518bf55fc5ff3d4dc5840635bd
+
             Kelas   : XII D 
             <br>
             NIS : 543221057
             <br>
             Jurusan : Rekayasa Perangkat Lunak
         </p>
-<<<<<<< HEAD
+
     </div>
-=======
+
         <table border="1">
             <thead>
                 <th>
@@ -32,6 +37,7 @@
                     <td>Nama</td>
                     <td>Kelas</td>
                     <td>Jurusan</td>
+                    
                 </th>
                 <p>
             </thead>
@@ -45,6 +51,26 @@
             </p>
             </tbody>
         </table>
->>>>>>> 18691ad6334cd8518bf55fc5ff3d4dc5840635bd
+        <form onsubmit="showAlert(event)">
+            <Label>Nama</Label>
+            <input type="text" name="nama">
+            <br>
+            <label>Nomor Telfon</label>
+            <input type="number" name="telpon">
+            <br>
+            <input type="submit" value="submit">
+        
+        </form>
+        <script>
+            function showAlert(event) {
+                event.preventDefault(); // Prevents the form from submitting normally
+                Swal.fire({
+                    title: "Good job!",
+                    text: "You clicked the button!",
+                    icon: "success"
+                });
+            }
+        </script>
+       
 </body>
 </html>
