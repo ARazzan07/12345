@@ -1,43 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             background-color: beige;
             align-content: center;
         }
-        table{
+
+        table {
             border-color: aqua;
             border-radius: 5px;
         }
+        button {
+            background-color: #4CAF50; /* Warna latar belakang */
+            color: white; /* Warna teks */
+            padding: 10px 20px; /* Padding untuk ukuran tombol */
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3e8e41;
+        }
     </style>
+    <script>
+        function showAlert() {
+            alert("Data berhasil disimpan!");
+        }
+    </script>
 </head>
+
 <body>
     <h2>Biodata</h2>
     <table border="1">
         <tr>
             <th>No</th>
             <th>Nama Lengkap</th>
-            <th>Nama</th>
             <th>Kelas</th>
             <th>Jurusan</th>
             <th>NIS</th>
             <th>Asal Sekolah</th>
-            <th>No Telfon</th>
         </tr>
         <tr>
             <td>1</td>
             <td>Regina Nata Bombang</td>
-            <td>Regina</td>
             <td>XII D</td>
             <td>Rekayasa Perangkat Lunak</td>
             <td>543221006</td>
             <td>SMK Telkom Banjarbaru</td>
-            <td>0812345678</td>
         </tr>
     </table>
+    <br><br>
+    <div class="form">
+    <br>
+    Nama :
+    <input type="text">
+    <br><br>
+    No Telepon :
+    <input type="number">
+    <br> <br>
+    <button type="submit" onclick="showAlert()">Submit</button>
+</div>
 </body>
 </html>
