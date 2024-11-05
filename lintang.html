@@ -4,45 +4,38 @@
         <title>Form Edit Data</title>
     </head>
     <body>
-        <h2 style="color: rgb(255, 0, 0); text-align: center;">Biodata Telkom</h2>
-        <p>
-                    <tr>
-                        <td>NIS :</td>
-                           <th>543221190</th>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>Nama Lengkap :</td>
-                            <th>Lintang Langit Biru</th>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>Tanggal Lahir :</td>
-                            <time datetime="2007-03-28">28 Maret 2007</time>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>Kelas :</td>
-                        <th>XII D</th>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>Jurusan :</td>
-                        <th>Rekayasa Perangkat Lunak</th>
-                    </tr>
-                    <tr>
-                </table>
-            
-        </p>
-        <form action="">
-            <Label>Nama</Label>
-            <input type="text" name="nama">
+        <table border="1">
+            <h2 style="color: rgb(0, 0, 0); text-align: center;">Biodata Telkom</h2>
+            <tr>
+                <td>NIS</td>
+                <td>Nama Lengkap</td>
+                <td>Tanggal Lahir</td>
+                <td>Kelas</td>
+                <td>Jurusan</td>
+            </tr>
+            <tr>
+                <td>543221190</td>
+                <td>Lintang Langit Biru</td>
+                <td>28 Maret 2007</td>
+                <td>XII E</td>
+                <td>Rekayasa Perangkat Lunak</td>
+            </tr>
+        </table>         
+        <br>
+        <form action="" onsubmit="return confirm('Apakah Anda yakin ingin menyimpan data?');">
+            <label>Nama</label>
+            <input type="text" name="nama" required>
             <br>
-            <label>Nomor Telfon</label>
-            <input type="number" name="telpon">
+            <label>Nomor Telepon</label>
+            <input type="number" name="telpon" required>
             <br>
-            <input type="submit" value="submit">
+            <input type="submit" value="Submit" id="submit" onclick="Submit()">
         </form>
     </body>
+    <script>
+        function Submit(){
+            document.getElementById("submit")
+            alert("submit success")
+        }
+    </script>
 </html>
-
