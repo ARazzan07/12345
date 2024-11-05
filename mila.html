@@ -8,10 +8,17 @@
         body{
             background-color: bisque;
         }
+        td{
+            text-align: center;
+        }
     </style>
+    <script>
+        function showAlert() {
+            alert("Data berhasil disimpan");
+        }
+    </script>
 </head>
 <body>
-    
     <marquee><h1><B>Biodata</B></h1></marquee>
     <h2>SMK Telkom Banjarbaru</h2>
     <table border="1">
@@ -20,6 +27,7 @@
                 <td>Nama</td>
                 <td>Kelas</td>
                 <td>Sekolah</td>
+
             </td>
         </thead>
         <tbody>
@@ -30,6 +38,12 @@
             </td>
         </tbody>
     </table>
-    
+    <br>
+    Nama :
+    <input type="text">
+    <br>
+    Nomor Telepon :
+    <input type="number">
+    <button type="submit" onclick="showAlert()">Submit</button>
 </body>
 </html>
